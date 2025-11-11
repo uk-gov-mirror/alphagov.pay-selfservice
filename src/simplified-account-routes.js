@@ -35,6 +35,8 @@ simplifiedAccount.use(simplifiedAccountStrategy, userIsAuthorised)
 // dashboard
 simplifiedAccount.get(paths.simplifiedAccount.dashboard.index, servicesController.dashboard.get)
 
+simplifiedAccount.get(paths.simplifiedAccount.enterSandboxMode.index, servicesController.enterSandboxMode.get)
+
 simplifiedAccount.get(
   paths.simplifiedAccount.demoPayment.index,
   restrictToSandboxOrStripeTestAccount,
